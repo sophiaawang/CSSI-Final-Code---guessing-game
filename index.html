@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+
+  <body>
+    <section class="hero is-small notification is-warning has-text-centered">
+      <div class="hero-body">
+        <p class="title">Ice Cream Flavors Quiz</p>
+        <p class="subtitle">
+          Can you guess the top 12 ice cream flavors in the United States?
+        </p>
+      </div>
+    </section>
+    <div class="container">
+      <section class="section">
+        <h1 class="title">Make some guesses!</h1>
+        <h2 class="subtitle">
+          Type your guesses below! If you get a match, it should show up
+          instantly.
+        </h2>
+        <input
+          id="guess"
+          class="input is-primary is-large"
+          type="text"
+          name="language"
+          placeholder="Guess a language!"
+        />
+      </section>
+      <section>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-success hidden" id="chocolate">
+              <p class="title">Chocolate</p>
+              <p class="subtitle"><img src = "https://www.thespruceeats.com/thmb/p0pdorHck76acx2xy1LgR00jScc=/735x0/easy-chocolate-ice-cream-recipe-1945798-hero-01-45d9f26a0aaf4c1dba38d7e0a2ab51e2.jpg" alt = ""></p>
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-danger hidden" id="vanilla">
+              <p class="title">Vanilla</p>
+              <p class="subtitle"><img src = "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/4/5/2/FNM_050112-Ted-Farmers-Market-001_s4x3.jpg.rend.hgtvcom.616.462.suffix/1371606862953.jpeg" alt = ""></p>
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-info hidden" id="strawberry">
+              <p class="title">Strawberry</p>
+              <p class="subtitle"><img src = "https://www.thespruceeats.com/thmb/uyfQULYPZ5_esLLh0qWUGLSGLaM=/3000x2001/filters:fill(auto,1)/strawberry-ice-cream-10-0b3e120e7d6f4df1be3c57c17699eb2c.jpg" alt = ""></p>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <div class="tile is-child notification is-warning hidden" id="butter-pecan">
+              <p class="title">Butter Pecan</p>
+              <p class="subtitle"><img src = "https://www.simplyrecipes.com/thmb/Im7KqiPrHRegpKFEmHUPMXpZ1zE=/2832x2832/smart/filters:no_upscale()/Simply-Recipes-Butter-Pecan-Ice-Cream-LEAD-5-a0fd1edc9c7f47f1b340699ad4cb0365.jpg" alt =""></p>
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-link hidden" id="mint-chocolate-chip">
+              <p class="title">Mint Chocolate Chip</p>
+              <p class = "subtitle"><img src = "https://feelslikehomeblog.com/wp-content/uploads/2022/02/Mint-Chocolate-Chip-Ice-Cream-recipe-FB.png" alt = ""></p>
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-primary hidden" id="cookies-and-cream">
+              <p class="title">Cookies and Cream</p>
+              <p class = "subtitle"><img src = "https://www.chewoutloud.com/wp-content/uploads/2013/08/cookies-and-cream-in-white-bowl.jpg" alt = ""></p>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-danger hidden" id="cookie-dough">
+              <p class="title">Cookie Dough</p>
+              <p class = "subtitle"><img src = "https://joyfoodsunshine.com/wp-content/uploads/2021/05/chocolate-chip-cookie-dough-ice-cream-recipe-1.jpg" alt = ""></p>
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-warning hidden" id="rocky-road">
+              <p class="title">Rocky Road</p>
+              <p class = "subtitle"><img src = "https://i0.wp.com/lmld.org/wp-content/uploads/2022/06/Rocky-Road-Ice-Cream-14.jpg" alt = ""></p>
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-success hidden" id="coffee">
+              <p class="title">Coffee</p>
+              <p class = "subtitle"><img src = "https://whitneyranchca.com/wp-content/uploads/2021/05/vegan-7.jpg?width=468&height=703" alt = ""></p>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-danger hidden" id="pistachio">
+              <p class="title">Pistachio</p>
+               <p class="subtitle"><img src = "https://assets.epicurious.com/photos/5747b49a5a5fbbae31ae4aed/master/pass/shutterstock_303021722.jpg" alt =""></p>
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-warning hidden" id="chocolate-chip">
+              <p class="title">Chocolate Chip</p>
+              <p class="subtitle"><img src = "https://www.simplyrecipes.com/thmb/NfWLlTu-wpBV6QvgepMX16YVRKY=/3389x2259/filters:fill(auto,1)/Simply-Recipes-Mint-ChocolateChip-LEAD-2-47a862e155a94154a40c4bad811d21b6.jpg" alt =""></p>
+            </div>
+          </div>
+          <div class="tile is-parent is-4">
+            <div class="tile is-child notification is-success hidden" id="neapolitan">
+              <p class="title">Neapolitan</p>
+              <p class="subtitle"><img src = "https://d.newsweek.com/en/full/1804500/most-popular-ice-cream-flavors-america.webp?w=790&f=c409fce1db1e7c2d13b4c3e84118f9da" alt =""></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer notification is-medium mt-5 mb-0">
+      <div class="content has-text-centered">
+        <p class="subtitle" id="message">Thanks for playing!</p>
+        <p>
+          Source: (some ice creams are ommitted)
+          <a
+            href="https://www.newsweek.com/most-popular-ice-cream-flavors-america-1594000"
+            >Accredited Language Services</a
+          >, translations of "Hello World" prodived by Google Translate
+        </p>
+      </div>
+    </footer>
+    <script src="script.js" type="text/javascript" defer></script>
+  </body>
+</html>
